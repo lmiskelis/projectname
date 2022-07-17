@@ -1,6 +1,40 @@
 
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
-.App{
+
+
+}
+
+.race{
+  height: 450px;
+  width: 250px;
+  background-color: lightgray;
+  border-radius: 25px;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 0px black;
+}
+
+.race img{
+  width: 200px;
+  height: 200px;
+}
+.Menu{
+  display: flex;
+  width: 100%;
+}
+.half{
+  width: 49%;
+  height: 80vh;
+  border: 2px solid black;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,39 +42,135 @@
   
 }
 
-.card{
-  height: 400px;
-  width: 200px;
-background-color: rgb(121, 118, 118);
-padding: 10px;
-display: flex;
-flex-direction: column;
-margin: 10px;
-color: white;
-border-radius: 25px;
-box-shadow: 5px 5px 5px black;
-cursor: pointer;
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:25px ;
+  padding-right: 25px;
+  margin: 5px;
+  background-color: lightgray;
+  border-radius: 22px;
 }
-.card img{
+.items img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.inventory{
+  height: 80%;
+  width: 90%;
+  background-color: chartreuse;
+  border-radius: 25px;
+  box-shadow: 5px 5px 0px  black;
+  display: flex;
+  flex-direction: column;
+  
+  overflow: scroll;
+}
+.Toolbar{
+  width: 100%;
+  height: 100px;
+  background-color: gold;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+
+}
+.Toolbar h1:hover{
+  color: black;
+  cursor: pointer;
+
+}
+.select{
+  display: flex;
+  width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+
+  
+}
+.select > div{
+  border: 2px solid black;
+  padding: 15px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+.select>div:hover {
+  color: white;
+  cursor: pointer;
+background-color: black;}
+.halfi{
+  
+      width: 49%;
+      height: 80vh;
+      border: 2px solid black;
+      margin: 5px;
+      display: flex;
+      
+      overflow: scroll;
+      flex-direction: column;
+    
+}
+.profile{
+  width: 100%;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; background-color: aqua;
+}
+.profile >img{
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+ 
+
+
+}
+.wraper{
+  width: 90%;
+  height: 25px;
+  background-color: lightgray;
+  margin: 15px;
+}
+.healthbar{
+  background-color: red;
+  width: 60%;
+  height: 25px;
+}
+.arena {
+  display: flex;
+}
+.trips{
+  width: 30%;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.battle{
+  font-size: 50px;
   height: 150px;
+  margin-bottom: 50px;
+}
+.mazas{
+  height: 50px !important;
+  width: 50px !important;
   object-fit: contain;
 }
-.board{
-  display: flex;
-  flex-wrap: wrap;
-}
 
-
-/* The Modal (background) */
 .modal {
-  display: block;
+  
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
@@ -55,18 +185,20 @@ cursor: pointer;
   /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal Content/Box */
 .modal-content {
-  
-  margin: auto;
+  background-color: #fefefe;
+  margin: 15% auto;
+  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -74,40 +206,7 @@ cursor: pointer;
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
-}
-
-
-.modalCard{
-    
-      
-      background-color: rgb(121, 118, 118);
-      padding: 10px;
-      display: flex;
-      
-      margin: 10px;
-      color: white;
-      border-radius: 25px;
-      box-shadow: 5px 5px 5px black;
-      cursor: pointer;
-}
-.modalCard img{
-  height: 500px;
-  object-fit: contain;
-  margin: 15px;
-}
-.text{
-  display: flex;
-  flex-direction: column;
-}
-
-.genres{
-  display: flex;
-  background-color: aliceblue;
-  width: 100%;
-}
-.genres p{
-  margin:15px
 }
