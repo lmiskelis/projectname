@@ -38,7 +38,8 @@ let comment ={author:logedon.username,
   
   <div className="modal-content">
     <span className="close" onClick={close}>&times;</span>
-    {conversation.comments.map((x,i)=><Chat x={x} key={i}/>)}
+    <div className="chatwindow">
+    {conversation.comments.map((x,i)=><Chat x={x} key={i}/>)}</div>
 <div className="chat">
     
     <input type="text" placeholder=" message" ref={messageValue}/>

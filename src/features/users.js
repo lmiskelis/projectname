@@ -23,11 +23,7 @@ export const userSlice=createSlice({
         
         id:3
     }],
-            logedon:{username:"Juozas",
-        password:"karalius",
-        image:"https://visualpharm.com/assets/30/User-595b40b85ba036ed117da56f.svg",
-        
-        id:3},
+            logedon:{},
         conversations:[]
         } 
     },
