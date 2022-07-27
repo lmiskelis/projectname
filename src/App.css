@@ -4,166 +4,155 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
+width: 100%;
+flex-direction: column;
 
 
 }
 
-.race{
-  height: 450px;
-  width: 250px;
-  background-color: lightgray;
-  border-radius: 25px;
-  margin: 25px;
+.Header{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: 5px 5px 0px black;
-}
-
-.race img{
-  width: 200px;
-  height: 200px;
-}
-.Menu{
-  display: flex;
+  justify-content: space-around;
   width: 100%;
-}
-.half{
-  width: 49%;
-  height: 80vh;
-  border: 2px solid black;
-  margin: 5px;
-  display: flex;
+  height: 8vh;
+  background-color:#FAF3E3 ;
   align-items: center;
-  justify-content: center;
+  padding: 5px;
+}
+.Header>div{
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.Header>div:hover{
+  color:#FF9F29 ;
+}
+.form{
+  display: flex;
   flex-direction: column;
-  
-}
-
-.items{
-  display: flex;
+  background-color: #1A4D2E;
+  width: 100%;
+  height: 90vh;
   align-items: center;
-  justify-content: space-between;
-  padding-left:25px ;
-  padding-right: 25px;
-  margin: 5px;
-  background-color: lightgray;
-  border-radius: 22px;
+  color: red;
 }
-.items img{
-  width: 50px;
+.form >input{
+  margin: 30px;
   height: 50px;
-  object-fit: cover;
-}
-.inventory{
-  height: 80%;
-  width: 90%;
-  background-color: chartreuse;
+  background-color: black;
   border-radius: 25px;
-  box-shadow: 5px 5px 0px  black;
-  display: flex;
-  flex-direction: column;
-  
-  overflow: scroll;
-}
-.Toolbar{
-  width: 100%;
-  height: 100px;
-  background-color: gold;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-
-}
-.Toolbar h1:hover{
-  color: black;
-  cursor: pointer;
-
-}
-.select{
-  display: flex;
-  width: 100%;
-  border: 2px solid black;
-  box-sizing: border-box;
-
-  
-}
-.select > div{
-  border: 2px solid black;
-  padding: 15px;
-  width: 50%;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
-}
-.select>div:hover {
   color: white;
-  cursor: pointer;
-background-color: black;}
-.halfi{
+  text-align: center;
+  width: 90%;
   
-      width: 49%;
-      height: 80vh;
-      border: 2px solid black;
-      margin: 5px;
-      display: flex;
-      
-      overflow: scroll;
-      flex-direction: column;
-    
+}
+.form button{
+  height: 100px;
+  width: 250px;
+  color: black;
+  background-color: #FAF3E3;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.form button:hover{
+  color: #FAF3E3;
+  background-color: #FF9F29;
+  cursor: pointer;
+}
+.form p{
+  font-size: 2rem;
+  text-align: center;
+}
+.form h1{
+  color: aqua;
 }
 .profile{
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; background-color: aqua;
 }
-.profile >img{
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
+.form >img{
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.allusers{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1A4D2E;
+  width:100%;
+  height: 90vh;
+}
+.card{
+  height: 250px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: #FF9F29;
+margin: 15px;
+flex-direction: column;
+padding: 15px;
+cursor: pointer;
+box-shadow: 5px 5px 5px black;
+border-radius: 5px;
+}
+.card >img{
+height: 150px;
+width: 150px;
+object-fit: cover;
+border-radius: 100%;
+}
+.Big{
  
-
-
+  width: 100%;
 }
-.wraper{
-  width: 90%;
-  height: 25px;
-  background-color: lightgray;
-  margin: 15px;
-}
-.healthbar{
-  background-color: red;
-  width: 60%;
-  height: 25px;
-}
-.arena {
+.Bigcard{
+  width: 100%;
+  background-color: #1A4D2E;
   display: flex;
-}
-.trips{
-  width: 30%;
-  margin: 25px;
-  display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.battle{
-  font-size: 50px;
-  height: 150px;
-  margin-bottom: 50px;
-}
-.mazas{
-  height: 50px !important;
-  width: 50px !important;
-  object-fit: contain;
+.Bigcard >img{
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  margin: 15px;
 }
 
+.Concard{
+  background-color: #FF9F29;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  border-radius: 15px;
+  padding: 5px;
+  justify-content: space-around;
+  cursor: pointer;
+
+}
+.Concard >img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  margin-left: 15px;
+  
+}
+
+
+
+/* The Modal (background) */
 .modal {
   
   /* Hidden by default */
@@ -187,12 +176,13 @@ background-color: black;}
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: #FAF3E3;
   margin: 15% auto;
   /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  
   /* Could be more or less, depending on screen size */
 }
 
@@ -209,4 +199,44 @@ background-color: black;}
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.chat{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content input{
+  margin: 5px;
+    height: 50px;
+    background-color: black;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    width: 60%;
+}
+
+.modal-content button{
+  height: 65px;
+    width: 100px;
+    color: black;
+    background-color: #FAF3E3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Bubble{
+  width: 80%;
+  align-self: center;
+  color: black;
+}
+.remove{
+  background-color: transparent !important;
+  border: none;
+  height: 50px;
+  width: 50px !important;
+
 }
